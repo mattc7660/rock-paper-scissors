@@ -10,7 +10,7 @@ const backButton = document.getElementById("backButton")
 startButton.addEventListener("click", function()
 {
     startScreen.style.display = "none";
-    gameScreen.style.display = "block";
+    gameScreen.style.display = "flex";
 
 });
 

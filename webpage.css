@@ -35,6 +35,21 @@ p
     background-color: aquamarine
 }
 
+#backButton
+{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: wheat;
+    font-size: 10px;
+}
+
+#backButton:hover
+{
+    background-color: aquamarine
+}
+
+
 body
 {
     background-color: wheat;

@@ -58,6 +58,20 @@ p
     gap: 20px;
 }
 
+.option
+{
+    display: flex;
+    gap: 20px;
+    background-color: wheat;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.option:hover
+{
+    background-color: aquamarine;
+}
+
 
 body
 {

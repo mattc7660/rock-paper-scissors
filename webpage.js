@@ -8,6 +8,9 @@ const rockButton = document.getElementById("rockButton")
 const paperButton = document.getElementById("paperButton")
 const scissorsButton = document.getElementById("scissorsButton")
 
+let userChoice = "";
+let computerChoice = 
+
 
 // start button switches to game screen
 startButton.addEventListener("click", function()
@@ -28,16 +31,22 @@ backButton.addEventListener("click", function()
 rockButton.addEventListener("click", function()
 {
     console.log("rock");
+    userChoice = "Rock"
+    alert("You chose " + userChoice);
 });
 
 paperButton.addEventListener("click", function()
 {
     console.log("paper");
+    userChoice = "Paper"
+    alert("You chose " + userChoice);
 });
 
 scissorsButton.addEventListener("click", function()
 {
     console.log("scissors");
+    userChoice = "Scissors"
+    alert("You chose " + userChoice);
 });
 
 

@@ -15,6 +15,13 @@ function getComputerChoice()
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
+// look at user choice and computer choice to decide who won the round
+function compareChoices()           
+{
+    
+
+}
+
 let userChoice = "";
 
 

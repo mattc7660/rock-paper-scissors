@@ -8,8 +8,14 @@ const rockButton = document.getElementById("rockButton")
 const paperButton = document.getElementById("paperButton")
 const scissorsButton = document.getElementById("scissorsButton")
 
+const choices = ["Rock", "Paper", "Scissors"];
+
+function getComputerChoice()
+{
+    return choices[Math.floor(Math.random() * choices.length)];
+}
+
 let userChoice = "";
-let computerChoice = 
 
 
 // start button switches to game screen
@@ -32,21 +38,22 @@ rockButton.addEventListener("click", function()
 {
     console.log("rock");
     userChoice = "Rock"
-    alert("You chose " + userChoice);
+    computerChoice = getComputerChoice();
+    alert("You chose " + userChoice + "\nComputer chose " + computerChoice);
 });
 
 paperButton.addEventListener("click", function()
 {
     console.log("paper");
     userChoice = "Paper"
-    alert("You chose " + userChoice);
+    computerChoice = getComputerChoice();
+    alert("You chose " + userChoice + "\nComputer chose " + computerChoice);
 });
 
 scissorsButton.addEventListener("click", function()
 {
     console.log("scissors");
     userChoice = "Scissors"
-    alert("You chose " + userChoice);
+    computerChoice = getComputerChoice();
+    alert("You chose " + userChoice + "\nComputer chose " + computerChoice);
 });
-
-

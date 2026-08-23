@@ -1,0 +1,242 @@
+/* BODY */
+
+body
+{
+    background: linear-gradient(to bottom right, wheat, orange);
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+/* TYPOGRAPHY */
+
+h1
+{
+    font-size: 80px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+h3
+{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+.subtitle
+{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* SCREENS */
+#startScreen, 
+#gameScreen,
+#winScreen
+{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+#startScreen
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameScreen 
+{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+
+    text-align: center;
+}
+#winScreen
+{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GAME MENU */
+.menuCard
+{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    animation: floatIn 0.5s ease;
+}
+
+@keyframes floatIn 
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* GAME UI */
+
+#result 
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 0 10px rgba(255, 200, 0, 0.8)
+}
+
+#scoreboard
+{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* BUTTONS (default) */
+
+button
+{
+    cursor: pointer;
+    background-color: wheat;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* START BUTTON */
+
+#startButton
+{
+    padding: 15px 40px;
+    font-size: 30px;
+    border-radius: 15px;
+    border: none;
+    transition: 0.3s;
+}
+
+#startButton:hover
+{
+    background-color: aquamarine;
+    transform: scale(1.1);
+}
+
+/* BACK BUTTON */
+
+#backButton
+{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#backButton:hover
+{
+    background-color: aquamarine;
+    transform: scale(1.1);
+}
+
+/* GAME OPTIONS */
+
+#options
+{
+    display: flex;
+    gap: 20px;
+}
+
+.option
+{
+    font-size: 25px;
+}
+
+.option:hover
+{
+    background-color: aquamarine;
+    transform: scale(1.1);
+}
+
+/* WIN SCREEN */
+
+#winnerText
+{
+    font-size: 50px;
+}
+
+#restartButton
+{
+    padding: 15px 40px;
+    font-size: 30px;
+    border-radius: 15px;
+    border: none;
+    transition: 0.3s;
+}
+
+#restartButton:hover
+{
+    background-color: aquamarine;
+    transform: scale(1.1);
+}
+
+/* COLOR EFFECT */
+@keyframes rainbow
+{
+    0%   {color: red;}
+    16%  {color: orange;}
+    33%  {color: yellow;}
+    50%  {color: green;}
+    66%  {color: blue;}
+    83%  {color: indigo;}
+    100% {color: violet;}
+}
+
+#winnerText
+{
+    font-size: 50px;
+    animation: rainbow 1.5s linear infinite;
+}
+
+@keyframes pulse
+{
+    0%, 100% {transform: scale(1);}
+    50%       {transform: scale(1.05);}
+}
+
+#winnerText
+{
+    animation: rainbow 1.5s linear infinite, 
+               pulse 0.8s ease-in-out infinite;
+}
+
+@keyframes glow
+{
+    0%, 100% {text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);}
+    50%       {text-shadow: 0 0 25px rgba(255, 100, 255, 0.9);}
+}
+

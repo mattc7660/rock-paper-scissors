@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Korean Rock Paper Scissors</title>
+    <link rel="stylesheet" href="webpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="startScreen">
+    <div class="menuCard">
+        <h1>GawiBawiBo</h1>
+
+        <h2>Wanna play rock, paper, scissors? Lets play</h2>
+
+        <p class="subtitle"> The Classic Korean Version ✊📄✂️ </p>
+
+        <button id="startButton">Start</button>
+    </div>
+</div>
+
+
+<div id="gameScreen">
+
+    <button id="backButton">Back</button>
+
+    <div id="result"></div>
+
+    <div id="scoreboard">
+        You: 0 | Computer: 0
+    </div>
+
+    <div id="options">
+        <button id="rockButton" class="option">Rock</button>
+        <button id="paperButton" class="option">Paper</button>
+        <button id="scissorsButton" class="option">Scissors</button>
+    </div>
+
+</div>
+
+
+<div id="winScreen">
+    <h1 id="winnerText"></h1>
+    <button id="restartButton">Play Again</button>
+</div>
+
+<script src="webpage.js"></script>
+
+</body>
+</html>
